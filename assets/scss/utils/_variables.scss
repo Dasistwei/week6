@@ -1,3 +1,4 @@
+// breadcrumb-active-color
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -7,16 +8,31 @@
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+// $gray-100: #f8f9fa !default;
+// $gray-200: #e9ecef !default;
+// $gray-300: #dee2e6 !default;
+// $gray-400: #ced4da !default;
+// $gray-500: #adb5bd !default;
+// $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
+//自定義
+$primary-100: #FFFDF5;
+$primary-200: #FFFBE5;
+$primary-300: #E8E3DA;
+$primary-400: #6E6B67;
+
+$accent-100: #E0EFDE;
+$accent-200: #569573;
+$accent-300: #406C55;
+$gray-100: #F8F9FA;
+$gray-200: #DEE2E6;
+$gray-300: #ADB5BD;
+$gray-400: #6C757D;
+$gray-500: #343A40;
+$gray-600: #212529;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -312,12 +328,27 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
+  "success":    #2CC585, //$success,
+  "info":       #4A72FF, //$info,
+  "warning":    #FFB054, //$warning,
+  "danger":     #D65F5F,//$danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  //自定義
+  "primary-100": #FFFDF5,
+  "primary-200": #FFFBE5,
+  "primary-300": #E8E3DA,
+  "primary-400": #6E6B67,
+  "accent-100": #E0EFDE,
+  "accent-200": #569573,
+  "accent-300": #406C55,
+  // "neutral-white": #FFFFFF,
+  "gray-100": #F8F9FA,
+  "gray-200": #DEE2E6,
+  "gray-300": #ADB5BD,
+  "gray-400": #6C757D,
+  "gray-500": #343A40,
+  "gray-600": #212529,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -1638,7 +1669,7 @@ $breadcrumb-item-padding-x:         .5rem !default;
 $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          var(--#{$prefix}secondary-color) !default;
-$breadcrumb-active-color:           var(--#{$prefix}secondary-color) !default;
+$breadcrumb-active-color:           $accent-200;//var(--#{$prefix}secondary-color) !default;
 $breadcrumb-divider:                quote("/") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
