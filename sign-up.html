@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script type="module" crossorigin src="/week6/assets/main-ef3b32ac.js"></script>
+    <link rel="stylesheet" href="/week6/assets/main-0fc80328.css">
+  </head>
+  <body>
+    <div class="bg-primary-100">
+  <div class="container-lg">
+    <nav class="navbar navbar-expand-lg py-lg-36 pxy border-gray-300 border-bottom">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand me-lg-32" href="index.html">
+          <img src="/week6/assets/logo-17ddd6a4.png" alt="header-logo" width="96" height="28">
+        </a>
+        <!-- 漢堡選單 -->
+        <button class="navbar-toggler border-0 p-12 hamburger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon icon-24"></span>
+        </button>
+        <div class="offcanvas offcanvas-end w-100 bg-primary-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <!-- 漢堡選單關閉鈕 -->
+          <div class="offcanvas-header p-12 hamburger-close-btn">
+            <button type="button" class="btn-close icon-20 text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body py-12">
+            <form class="d-flex">
+              <div class="input-group position-relative">
+                <input type="search" class="form-control border-gray-200 rounded-pill" placeholder="搜尋文章" aria-label="Search">
+                <a class="d-block position-absolute d-flex align-items-center top-50 end-0 translate-middle" type="button" id="button-addon1">
+                  <span class="material-symbols-outlined text-accent-200">search</span>
+                </a>      
+              </div>
+            </form>        
+            <ul class="navbar-nav header-links flex-grow-1 justify-content-lg-end align-items-lg-center">
+              <li class="mt-4 mt-lg-0 ">
+                <a class="active p-12 p-lg-0" aria-current="page" href="articles.html">所有文章</a>
+              </li>
+              <li class="mt-4 mt-lg-0 ">
+                <a class="p-12 p-lg-0" href="#">訂閱方案</a>
+              </li>
+              <li class="mt-4 mt-lg-0 ">
+                <a class="p-12 p-lg-0" href="#">關於我們</a>
+              </li>
+              <li class="mt-4 mt-lg-0 ">
+                <a href="sign-up.html" class="btn btn-accent-200 text-white rounded-pill mt-3 mt-lg-0 w-100">
+                  <span>登入 / 註冊</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>    <div class="container-lg py-lg-100 py-60">
+      <div class="row row-cols-lg-2 row-cols-1 justify-content-center">
+        <div class="flex-column bg-white p-lg-40 p-4 border border-primary-300 rounded-6">
+          <form class="">
+            <fieldset>
+              <legend class="text-accent-200 mb-lg-40 mb-4 fw-black">註冊</legend>
+              <div class="d-flex gap-3 flex-column mb-lg-40 mb-4">
+                <div class="fw-bold">
+                  <label for="account" class="form-label mb-lg-12">會員帳號</label>
+                  <input type="account" id="account" class="form-control bg-gray-100 py-12 px-3 border-0" aria-describedby="accountHelpBlock" placeholder="請輸入會員帳號">              
+                </div>
+                <div class="fw-bold">
+                  <label for="password" class="form-label mb-lg-12">密碼</label>
+                  <input type="password" id="password" class="form-control bg-gray-100 py-12 px-3 border-0" aria-describedby="passwordHelpBlock" placeholder="請輸入密碼">              
+                </div>
+                <div class="fw-bold">
+                  <label for="email" class="form-label mb-lg-12">電子信箱</label>
+                  <input type="email" id="email" class="form-control bg-gray-100 py-12 px-3 border-0" aria-describedby="emailHelpBlock" placeholder="請輸入電子信箱">              
+                </div>
+              </div>        
+              <button type="submit" class="btn btn-accent-200 rounded-pill fs-6 fw-bold d-flex justify-content-center gap-12 w-100">
+                <span class="">立即註冊</span>
+                <span class="material-symbols-outlined icon-center">arrow_right_alt</span>
+              </button>
+            </fieldset>
+          </form>    
+          <div class="my-lg-40 my-4 py-12">
+            <div class="position-relative border-top text-gray-300">
+              <span class="position-absolute top-0 start-50 translate-middle d-block bg-white px-12 text-gray-300">或以其他方式註冊</span>
+            </div>
+          </div>
+          <button class="btn btn-gray-100 py-12 rounded-pill fs-6 fw-bold d-flex justify-content-center gap-12 w-100 mb-2">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBtZM/T8JAGMafa4kQHSSMTCXRxMRBMK5GOjqYlNFJ/QAmTqyIg3HzIwCLjnQwrpToZqJFXRyMXYxOSmQAIuV8j9YGShv/RJ/k7tr33v7e5/4U+COxsAmeRRw2NMpQBgEJJvUmM2B9C+QCDulxE8EqQ0bRD2Q+iII+auCui3AZ7AzqcCDyBcSgUg0amxRfoTFLzSJHW36yB8KiXMCF/QkRH+bYOYGGHS/TnsnB+zRYGq/FFEj8AZc2cEqtw3NkXccP5DiS+2lwJlwBc7LBVrsjkGS+sRsGYJGI/rg/bzogLqWpc2YmWd2fzMEKYSD0eqI3pfEZHscv5DhitHmuodv3xALwNJLEwIsYdbhBgzJ4kZnp5IiJGl1CKfp63J7FUXtGhNSTnG4EVU7mrzWqWfWgkp16PshYg6UxFc291lLFhQhV16qa5odkSztZGkqeU4aygHiOhLSqFqeDv+LwXUigTknTFE8LVusthfu7ddh21OKsr46BXJhCsJoPNqZuJ2HdNLY9iNDIqek53aKbpBK9EgYRy5mKvWSGIWOOAtyl3SXRbwhrgmpRsSb+Ux8DMpnpdyeTfAAAAABJRU5ErkJggg==" alt="icons-google">
+            <span class="">使用 Google 註冊</span>
+          </button>
+          <button class="btn btn-gray-100 py-12 rounded-pill fs-6 fw-bold d-flex justify-content-center gap-12 w-100 mb-lg-40 mb-4">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBvVO9SsRAEJ7d5OQKD9MdJ4gRfABLKznxAbTTVvEKnyLJA1hfcYpoZ2djf/oE2sqBsTEICgFF1Euyzk6SY/N3P819ELIz+fbb2ZkvAPNC/cIz5TOJx8qSes9rCxAWgNjA0EjSPrJvahp3fg5b7kQh3vMsBpENYyCA21Gn5VQKVYkYCxxWG5zWjx9BqdhIqN71zKEePedFds06nG8ZJCaxfv0G7meYbI62g85KX671dMOwFll4TAGnm0skcvX0De5XCP6vUK6oYR8hK4TZPSi5krmo0fro3i+eEg+DENfbpfEaRaHSoWYoqTX0KsZgvwlmQxvFwfEyvfWz11J+XNEJ+SJT+wv2I22qhFzfeX/5/X7qKaUi9oB3bqfRzu079Wdw0KRYTqsANGi2IsqFDsyIEF1eEJJ+QF9MLUZc5Vfh6kcUs6cRkxzJVXM8T5KEMOBr2K9Lzpk6AJ8x1k/cbMOsEEKY8oF54R/eZYMUmIQwhAAAAABJRU5ErkJggg==" alt="icons-facebook">
+            <span class="">使用 Facebook 註冊</span>
+          </button>
+          <div class="d-flex justify-content-center gap-12">
+            <span>已經是會員了？</span>
+            <a type="button" href="sign-in.html" class="text-accent-200 hover">點此登入</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary-100">
+  <div class="container-lg">
+    <footer class="border-top border-gray-300 text-center">
+      <span class="fst-normal fs-lg-6 fs-14 py-4">©Vivre 2024 All right Reserved</span>
+    </footer>
+  </div>  
+</div>    
+  </body>
+</html>
