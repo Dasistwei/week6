@@ -20,26 +20,11 @@
 .ff-GurmukhiMN{
   font-family: "Gurmukhi MN", serif;
 }
-.fs-12{
-  font-size: 12px;
-}
-.fs-14{
-  font-size: 14px;
-}
-.fs-16{
-  font-size: 16px;
-}
-.fs-40{
-  font-size: 40px;
-}
 .cursor-none{
   cursor: unset;
 }
 .fw-black{
   font-weight: $black;
-}
-.w-20{
-  width: 60%;
 }
 .gap-10{
   gap: 10px !important;
@@ -54,26 +39,11 @@
 .me-32{
   margin-right: 32px;
 }
-.mt-40{
-  margin-top: 40px;
-}
-.mb-12{
-  margin-bottom: 12px;
-}
-.mb-20{
-  margin-bottom: 20px;
-}
 .mb-28{
   margin-bottom: 28px;
 }
 .mb-32{
   margin-bottom: 32px;
-}
-.mb-36{
-  margin-bottom: 36px;
-}
-.mx-12{
-  margin: 0 12px;
 }
 .mx-18{
   margin: 0 18px;
@@ -91,26 +61,8 @@
 .py-10{
   padding: 10px 0;
 }
-.py-12{
-  padding: 12px 0 !important;
-}
-.p-40{
-  padding: 40px;
-}
-.p-12{
-  padding: 12px;
-}
 .pb-44{
   padding-bottom: 44px;
-}
-.py-12{
-  padding: 0 12px;
-}
-.px-12{
-  padding: 0 12px;
-}
-.py-36{
-  padding: 36px 0;
 }
 .pxy{
   padding: 6px 8px 6px 0;
@@ -187,7 +139,7 @@
     color: white;
   }
 }
-.text-accent-200:hover{
+.text-accent-200.hover:hover{
   color: $accent-300 !important;
 }
 .icon-center{
@@ -202,9 +154,6 @@
     color: $accent-200 !important;
   }
 }
-.rounded-lg{
-  border-radius: 12px;
-}
 
 @include desktop{
   .gap-lg-20{
@@ -216,74 +165,14 @@
   .fw-lg-normal{
     font-weight: 400;
   }
-  .fs-lg-16{
-    font-size: 16px;
-  }
-  .fs-lg-20{
-    font-size: 20px !important;
-  }
-  .fs-lg-24{
-    font-size: 24px;
-  }
-  .fs-lg-32{
-    font-size: 32px;
-  }
-  .fs-lg-40{
-    font-size: 40px;
-  }
   .fs-lg-50{
     font-size: 50px;
-  }
-  .mb-lg-sm{
-    margin-bottom: 12px;
-  }
-  .mt-lg-80{
-    margin-top: 80px;
-  }
-  .me-lg-12{
-    margin-right: 12px;
-  }
-  .mb-lg-36{
-    margin-bottom: 36px ;
-  }
-  .mb-lg-20{
-    margin-bottom: 20px !important;
-  }
-  .mb-lg-40{
-    margin-bottom: 40px;
   }
   .ms-lg-60{
     margin-left: 60px;
   }
-  .mb-lg-minus{
-    margin-bottom: -24px;
-  }
   .py-lg-7-1{
     padding: 7.5px 0;
-  }
-  .p-lg-40{
-    padding: 40px !important;
-  }
-  .py-lg-36{
-    padding: 36px 0;
-  }
-  .py-lg-40{
-    padding: 40px 0;
-  }
-  .py-lg-80{
-    padding: 80px 0 !important;
-  }
-  .my-lg-80{
-    margin: 80px 0 !important;
-  }
-  .mt-lg-80{
-    margin-top: 80px;
-  }
-  .my-lg-36{
-    margin: 36px 0;
-  }
-  .my-lg-100{
-    margin: 100px 0;
   }
   .position-lg-static{
     position: unset !important;

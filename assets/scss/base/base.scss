@@ -5,16 +5,13 @@
 $semibold: 600;
 $bold: 700;
 $black: 900;
-body{
-  font-family: "Newsreader", "Noto Sans TC", serif;
-  line-height: 1.5;
+body, p{
   letter-spacing: 0.05em;
   font-weight: $semibold;
 }
 h1,h2,h3,h4,h5,h6{
   line-height: 1.2;
   letter-spacing: 0.1em;
-  margin-bottom: 0;
 }
 h1,h2,h3,h4,h5{
   font-weight: $black;
@@ -37,7 +34,6 @@ li{
 	box-sizing: border-box;
 }
 a{
-  text-decoration: none;
 	color: inherit;
 	display: inline-block;
 }
