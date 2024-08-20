@@ -5,6 +5,13 @@
 .outline{
   outline: 1px solid red;
 }
+.material-symbols-outlined.fill{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 .lh-1{
   line-height: 1;
 }
@@ -35,6 +42,9 @@
 .gap-20{
   gap: 20px;
 }
+.gap-28{
+  gap: 28px;
+}
 
 .me-32{
   margin-right: 32px;
@@ -60,6 +70,9 @@
 }
 .py-10{
   padding: 10px 0;
+}
+.pt-36{
+  padding-top: 36px;
 }
 .pb-44{
   padding-bottom: 44px;
@@ -154,16 +167,33 @@
     color: $accent-200 !important;
   }
 }
-
+.subscribe-type{
+  &.active{
+    background: $accent-200 !important;
+    color: white !important;
+  }
+}
 @include desktop{
+  .w-lg-66{
+    width: 66%;
+  }
   .gap-lg-20{
     gap: 20px !important;
   }
   .gap-lg-40{
     gap: 40px !important;
   }
+  .gap-lg-36{
+    gap: 36px !important;
+  }
+  .gap-lg-60{
+    gap: 60px !important;
+  }
   .fw-lg-normal{
     font-weight: 400;
+  }
+  .fs-lg-48{
+    font-size: 48px;
   }
   .fs-lg-50{
     font-size: 50px;
@@ -238,4 +268,83 @@
   &::-webkit-scrollbar{
     display: none;
   }
+}
+.card-accent-200{
+  color: $gray-400;
+  background: white !important;
+  border: 1px solid $primary-300;
+  cursor: pointer;
+  &:hover{
+    color: $gray-400;
+  }
+  em{
+    font-style: normal;
+  }
+  a.btn{
+    color: $gray-400;
+    pointer-events: none;
+  }
+  &.active{
+    border: 2px solid $accent-200 !important;
+    // background: white !important;
+    color: $gray-500 !important;
+    a.btn{
+      background: $accent-200;
+      color: white;
+      &:hover{
+        background: $accent-300;      
+      }
+    }
+    input[id="discount-code"]~a{
+      color: $gray-400;
+      background: $gray-100;
+      &:hover{
+        background-color: $gray-200;
+      }
+    }
+    em{
+      color: $accent-200;
+    }
+  }
+}
+.input-placeholder-gray-300{
+  input::placeholder{
+    color: $gray-300;
+  }
+  input[type="checkbox"]{
+    font-weight: normal;
+    &.form-check-input+label{
+      font-weight: 600;
+    }
+  }
+  input[type="radio"]{
+    position: relative;
+    &:checked{
+      background: $accent-200;
+    }
+    &::after{
+      content: "";
+      width: 7px;
+      height: 7px;
+      top: 25%;
+      left: 25%;
+      position: absolute;
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
+}
+.w-80{
+  width: 80%;
+}
+.list-style-disc{
+  &>li{
+    margin-left: 10px;
+    list-style: inside;
+    list-style-type: disc;
+  }
+
+}
+.text-no-wrap{
+  white-space: pre;
 }
