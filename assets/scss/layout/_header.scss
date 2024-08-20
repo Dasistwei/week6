@@ -282,13 +282,14 @@
   }
   a.btn{
     color: $gray-400;
-    pointer-events: none;
+    // pointer-events: none;
   }
   &.active{
     border: 2px solid $accent-200 !important;
     // background: white !important;
     color: $gray-500 !important;
     a.btn{
+      // pointer-events: ;
       background: $accent-200;
       color: white;
       &:hover{
